@@ -2,9 +2,13 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { SessionProvider } from "next-auth/react"
 =======
 >>>>>>> 277ebc1 (Meu primeiro projeto nextjs)
+=======
+import { SessionProvider } from "next-auth/react"
+>>>>>>> 147a31f (implementando OAuth authentication)
 // import Header from "../components/header/Header";
 
 import Header from "../components/Header/Header";
@@ -28,13 +32,16 @@ export default function App({ Component, pageProps }: AppProps) {
 =======
 
 export default function App({ Component, pageProps }: AppProps) {
-  return( 
-  <>
-  <Header/>
-  <Component {...pageProps} />
-  
-  </>
+  return (
+    <SessionProvider session={pageProps.session}>
+      <Header />
+      <Component {...pageProps} />
+    </SessionProvider>
   );
+<<<<<<< HEAD
   
 >>>>>>> 277ebc1 (Meu primeiro projeto nextjs)
+=======
+
+>>>>>>> 147a31f (implementando OAuth authentication)
 }

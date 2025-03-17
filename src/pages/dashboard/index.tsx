@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/react";
+=======
+>>>>>>> c4be3ba (Meu primeiro projeto nextjs)
 
 import styles from './styles.module.css'
 
 // Components
 import Header from '@/src/components/Header/Header'
 import Head from 'next/head'
+<<<<<<< HEAD
 import Textarea from "@/src/components/Textarea";
 
 // Icons
@@ -93,11 +97,17 @@ export default function Dashboard({ user }: UserInfos) {
     }, [])
 
 
+=======
+
+
+export default function Dashboard() {
+>>>>>>> c4be3ba (Meu primeiro projeto nextjs)
     return (
         <div className={styles.container}>
             <Head>
                 <title>Meu painel de tarefas</title>
             </Head>
+<<<<<<< HEAD
             <main className={styles.main}>
                 <section className={styles.content}>
                     <div className={styles.contentForm}>
@@ -161,4 +171,11 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
         },
     }
 
+=======
+
+
+            <h1>Meu painel</h1>
+        </div>
+    )
+>>>>>>> c4be3ba (Meu primeiro projeto nextjs)
 }
