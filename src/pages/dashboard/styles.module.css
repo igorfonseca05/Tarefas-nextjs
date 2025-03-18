@@ -45,6 +45,7 @@
     background-color: #3183ff;
     padding: 12px 0;
     font-size: 18px;
+<<<<<<< HEAD
 }
 
 .button:hover {
@@ -126,4 +127,6 @@
 .warning {
     text-align: center;
     /* background-color: rebeccapurple; */
+=======
+>>>>>>> 48e4826 (implementando OAuth authentication)
 }

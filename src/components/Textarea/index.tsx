@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HTMLProps } from 'react'
 import styles from './styles.module.css'
 
@@ -16,5 +17,13 @@ import styles from './styles.module.css'
 export default function Textarea({ ...rest }: HTMLProps<HTMLTextAreaElement>) {
     return (
         <textarea className={styles.textarea} name="" id="" {...rest}></textarea>
+=======
+import styles from '../Textarea/styles.module.css'
+
+
+export default function Textarea({ placeholder }: { placeholder: string }) {
+    return (
+        <textarea name="" id="" placeholder={placeholder}></textarea>
+>>>>>>> 48e4826 (implementando OAuth authentication)
     )
 }

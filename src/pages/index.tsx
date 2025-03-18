@@ -4,6 +4,7 @@ import Image from "next/image";
 <<<<<<< HEAD
 <<<<<<< HEAD
 import styles from '@/styles/Home.module.css'
+<<<<<<< HEAD
 import heroImg from '@/public/assets/hero.png'
 
 export default function Home() {
@@ -17,9 +18,12 @@ import styles from '@/styles/Home.module.css'
 >>>>>>> 277ebc1 (Meu primeiro projeto nextjs)
 
 
+=======
+>>>>>>> 48e4826 (implementando OAuth authentication)
 import heroImg from '@/public/assets/hero.png'
 
 export default function Home() {
+
   return (
 <<<<<<< HEAD
     <>
@@ -33,6 +37,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
       <main className={styles.main}>
@@ -72,15 +77,18 @@ export default function Home() {
     </>
 >>>>>>> 5264cea (Meu primeiro projeto nextjs)
 =======
+=======
+
+>>>>>>> 48e4826 (implementando OAuth authentication)
       <main className={styles.main}>
-          <div className="styles logoContent">
+        <div className="styles logoContent">
           <div className={styles.imageContainer}>
-          <Image 
-            className={styles.hero}
-            alt="Logo Tarefas"
-            src={heroImg}
-            priority
-          />
+            <Image
+              className={styles.hero}
+              alt="Logo Tarefas"
+              src={heroImg}
+              priority
+            />
           </div>
           <h1 className={styles.title}>
             Sistema feito para você organizar <br></br>
@@ -88,15 +96,15 @@ export default function Home() {
           </h1>
 
           <div className={styles.infoContent}>
-          <section className={styles.box}>
-            <span>+12 posts</span>
-          </section>
-          <section className={styles.box}>
-            <span>+90 comentários</span>
-          </section>
-        </div>
-            
+            <section className={styles.box}>
+              <span>+12 posts</span>
+            </section>
+            <section className={styles.box}>
+              <span>+90 comentários</span>
+            </section>
           </div>
+
+        </div>
       </main>
     </div>
 >>>>>>> 277ebc1 (Meu primeiro projeto nextjs)

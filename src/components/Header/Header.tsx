@@ -60,6 +60,7 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 
 >>>>>>> f3dba6d (implementando OAuth authentication)
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 import styles from './styles.module.css'
@@ -75,7 +76,7 @@ export default function Header() {
       const userName = session?.user?.name
       setUserName(userName?.split(' ')[0])
     }
-  }, [])
+  }, [status])
 
 
   return (
@@ -85,9 +86,13 @@ export default function Header() {
           <Link href={'/'}>
             <h1 className={styles.logo}>Tarefa <span>+</span></h1>
           </Link>
-          <Link href={'/dashboard'} className={styles.link}>
-            Meu Painel
-          </Link>
+
+          {session?.user && (
+            <Link href={'/dashboard'} className={styles.link}>
+              Meu Painel
+            </Link>
+          )}
+
         </nav>
 <<<<<<< HEAD
         <button className={styles.loginButton}>Acessar</button>
@@ -98,10 +103,11 @@ export default function Header() {
 =======
 =======
         {status === 'loading' ? (
-          <></>
+          <> <p>Carregando...</p></>
         ) : session ? (
           <div className={styles.greatingContainer}>
             <p className={styles.greatingUser}>Olá {userName} </p>
+            {/* <span><img src={session.user?.image} alt="" /></span> */}
             <button className={styles.loginButton} onClick={() => signOut()}>Sair</button>
           </div>
 
